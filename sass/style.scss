@@ -1,0 +1,81 @@
+@import url("https://fonts.googleapis.com/css2?family=Anton&family=Croissant+One&family=Roboto:wght@300&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html,
+body {
+  height: 100%;
+  width: 100%;
+  background-color: rgb(196, 234, 205);
+}
+.top {
+  color: aliceblue;
+  height: 10%;
+  background-color: rgb(73, 90, 216);
+  display: flex;
+  list-style: none;
+  //justify-content: center;
+  align-items: center;
+  .brand img {
+    width: 5rem;
+  }
+}
+.container {
+  width: 85%;
+  min-height: 80%;
+  background-color: black;
+  margin: 5% auto;
+  padding: 2%;
+  background-image: url("../Assests/bg.jpg");
+  background-size: cover;
+  border-radius: 3%;
+  .songlist {
+    color: white;
+  }
+}
+.bottom {
+  background-color: black;
+  color: white;
+  position: sticky;
+  bottom: 0px;
+  height: 15%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  .icons {
+    margin-top: 1rem;
+  }
+}
+#myProgressBar {
+  width: 80%;
+  cursor: pointer;
+}
+.songItem img {
+  height: 15%;
+  width: 5%;
+  border-radius: 15%;
+}
+.songItem {
+  height: 20%;
+  margin: 3%;
+  border-radius: 15%;
+  background-color: aquamarine;
+  color: black;
+  display: flex;
+  padding: 1%;
+  justify-content: space-between;
+  .timestamp i {
+    cursor: pointer;
+  }
+}
+.songInfo {
+  position: absolute;
+  left: 10%;
+}
+.songInfo img {
+  opacity: 0;
+  transition: opacity 0.6s ease-in;
+}
